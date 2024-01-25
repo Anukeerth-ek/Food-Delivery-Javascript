@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Sign Up Form</title>
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+               integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          />
+          <link rel="stylesheet" href="stylelogin.css" />
+     </head>
+     <body>
+          <div class="form-container" id="form-container">
+               <div class="form-wrapper">
+                    <img
+                         src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png"
+                         alt=""
+                         class="fb"
+                    />
+                    <img
+                         src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                         alt=""
+                         class="google"
+                    />
+                    <form name="submit-to-google-sheet">
+                         <div class="input-container">
+                              <input type="text" name="fname" placeholder="FirstName" class="sign-validation" />
+
+                              <input type="text" name="lname" placeholder="LastName" class="sign-validation" />
+
+                              <input
+                                   type="number"
+                                   name="Mobile"
+                                   placeholder="10 digit Mobile Number"
+                                   class="sign-validation"
+                              />
+
+                              <input type="email" name="Email" placeholder="Email" class="sign-validation" />
+
+                              <i class="fa-regular fa-eye"></i>
+                              <!-- <i class="fa-regular fa-eye-slash"></i> -->
+                              <!-- **********NEED TO ADD EYE CLOSING ICON************** -->
+                              <input
+                                   type="password"
+                                   name="Password"
+                                   placeholder="Password"
+                                   id="signup-input-box"
+                                   class="sign-validation"
+                              />
+                         </div>
+
+                         <div class="login-container">
+                              <button id="sign-up">Sign Up</button>
+                              <input type="checkbox" checked="checked" name="remember" /> Remember me
+                         </div>
+                    </form>
+               </div>
+          </div>
+          <!-- RANDOM GENERATOR HERE >>>>>>>>>>> -->
+
+          <div class="random-generator" id="rand-pswd-container">
+               <p>HUNGRY ?!! Can't think of a strong password ?</p>
+               <p>Try Strong random Passwords ?</p>
+               <div class="random-button">
+                    <button class="btn-continue">Yeah, sure</button>
+                    <button class="btn-break">No, its fine</button>
+               </div>
+
+               <input type="text" name="" id="input-box" class="rand-generate-box" />
+               <i class="fa-regular fa-copy" id="regenerate-copy-icon"></i>
+          </div>
+
+          <!-- CONFIRMATION HERE  >>>>> -->
+
+          <div class="confirmation-container">
+               <img src="tick icon-photoaidcom-cropped.png" alt="" />
+               <h2>Registered Successfully!! <i class="fa-solid fa-check"></i></h2>
+               <h4>Your subscription has been confirmed. You've been added to our list</h4>
+               <a href="./index.html" style="margin-top: 25px">Back to Home</a>
+          </div>
+
+          <script src="app.js"></script>
+     </body>
+</html>
