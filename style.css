@@ -9,9 +9,13 @@
      box-sizing: border-box;
      font-family: var(--header-font-family);
 }
+html {
+     max-width: 100vw;
+}
 body {
      height: 150rem;
      max-width: 100vw;
+     
 }
 nav {
      position: sticky;
@@ -50,18 +54,31 @@ nav {
 .nav-list li {
      margin-left: 2rem;
      transition: 0.5s ease;
-     text-shadow: 1px 1px black;
+     font-weight: bold;
+     padding-top: 5px;
 }
 .nav-list li:hover {
-     text-shadow: none;
+     font-weight: normal;
+     
      cursor: pointer;
 }
 .nav-list a {
      text-decoration: none;
      color: #333;
 }
+.sign-up-list {
+     background-color: rgba(255, 72, 0, 0.848);
+     color: #fff;
+     padding: 5px 38px;
+     border-radius: 8px;
+}
+.sign-up-list:hover {
+     background-color: rgba(255, 72, 0, 0.948);
+     transition: 0.5s all;
+}
 .header-container {
      width: 100vw;
+     overflow: hidden;
 }
 .image-div {
      width: 1500px;
@@ -140,6 +157,10 @@ nav {
      border: 1px solid #444;
      font-size: 0.9rem;
 }
+.section1-list button:hover {
+     cursor: pointer;
+     border-color: rgb(255, 72, 0);
+}
 .section1-list .filter {
      border: none;
      outline: none;
@@ -164,6 +185,7 @@ nav {
 }
 .section-2-ul li:hover {
      text-decoration: underline;
+     cursor: pointer;;
 }
 .dish-image-wrapper .dish-image {
      width: 18vw;
@@ -220,6 +242,7 @@ nav {
 }
 .order-button-container button:hover {
      background-color: rgb(255, 72, 0);
+     cursor: pointer;
 }
 .footer-container {
      display: flex;
@@ -249,4 +272,5 @@ nav {
 .footer-container ul li:hover {
      font-size: 0.9rem;
      text-decoration: underline;
+     cursor: pointer;
 }
